@@ -44,54 +44,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
   </script>
-<div class="banner-bg banner-sec">	
+<div class="banner-bg banner-sec">
 	  <div class="container">
-			 <div class="header">
-			       <div class="logo">
-						 <a href="index.html"><img src="images/logo.png" alt=""/></a>
-				   </div>							 
-				  <div class="top-nav">										 
-						<label class="mobile_menu" for="mobile_menu">
-						<span>Menu</span>
-						</label>
-						<input id="mobile_menu" type="checkbox">
-					   <ul class="nav">
-						  <li class="dropdown1"><a href="bicycles.html">BICYCLES</a>
-							  <ul class="dropdown2">
-									<li><a href="bicycles.html">FIXED / SINGLE SPEED</a></li>
-									<li><a href="bicycles.html">CITY BIKES</a></li>
-									<li><a href="bicycles.html">PREMIMUN SERIES</a></li>												
-							  </ul>
-						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
-							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
-							  </ul>
-						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
-							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
-							  </ul>
-						 </li>               
-						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
-							 <ul class="dropdown2">
-									<li><a href="404.html">CLASSIC BELL</a></li>
-									<li><a href="404.html">BOTTLE CAGE</a></li>
-									<li><a href="404.html">TRUCK GRIP</a></li>
-							  </ul>
-						 </li>
-						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
-					  </ul>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-	  </div> 				 
+          <?php
+          include("partials/header.php");
+          ?>
+	  </div>
 </div>
 <!--/banner-->
 <div class="parts">
@@ -101,151 +59,151 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		      <div class="bike-parts">
 				 <div class="top">
 					 <ul>
-						 <li><a href="index.html">home</a></li>
+						 <li><a href="index.php">home</a></li>
 						 <li><a href="#"> / </a></li>
 						 <li><a href="#">parts</a></li>
 					 </ul>				 
 				 </div>
 				 <div class="bike-apparels">
 					 <div class="parts1">
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p1.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Wire Locks<span>$7.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p3.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Gloves<span>$50.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p2.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Speed Cassette<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p4.JPG" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Road Bike Pedals<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
 						 <div class="clearfix"></div>
 					 </div>
 					 
 					 <div class="parts2">
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p5.JPG" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Rear Derailleur<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p6.JPG" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Race XC Crankset<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html#">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php#">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p7.JPG" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Aero Handlebars<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p8.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Grip Tires<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
 						 <div class="clearfix"></div>
 					 </div>
 					 
 					 <div class="parts3">
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p9.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Bike Wheelset<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec">					 
+						 <a href="single.php"><div class="part-sec">
 							 <img src="images/p10.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>MTB Chainring<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p11.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Suspensions<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p12.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Helmets<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
 						 <div class="clearfix"></div>
 					 </div>
 					 
 					 <div class="parts4">
-						 <a href="single.html"><div class="part-sec bottom-line">					 
+						 <a href="single.php"><div class="part-sec bottom-line">
 							 <img src="images/p13.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Middle Frames<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec bottom-line">					 
+						 <a href="single.php"><div class="part-sec bottom-line">
 							 <img src="images/p14.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Brooks Saddle<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec bottom-line none1">					 
+						 <a href="single.php"><div class="part-sec bottom-line none1">
 							 <img src="images/p15.jpg" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Motocross braces<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
-						 <a href="single.html"><div class="part-sec none1">					 
+						 <a href="single.php"><div class="part-sec none1">
 							 <img src="images/p16.JPG" alt=""/>
 							 <div class="part-info">
 								 <a href="#"><h5>Bike Pumps<span>$200.00</span></h5></a>
-								 <a class="add-cart" href="single.html">Quick View</a>
-								 <a class="qck" href="single.html">BUY NOW</a>
+								 <a class="add-cart" href="single.php">Quick View</a>
+								 <a class="qck" href="single.php">BUY NOW</a>
 							 </div>
 						 </div></a>
 						 <div class="clearfix"></div>
@@ -352,22 +310,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  </div>
 </div>
 <!---->
-<div class="footer">
-	 <div class="container wrap">
-		<div class="logo2">
-			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
-		</div>
-		<div class="ftr-menu">
-			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
-				 <li><a href="404.html">EXTRAS</a></li>
-			 </ul>
-		</div>
-		<div class="clearfix"></div>
-	 </div>
-</div>
+<?php
+include("partials/footer.php");
+?>
 <!---->
 
 </body>

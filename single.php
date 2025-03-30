@@ -17,7 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Bike-shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Bike-shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
@@ -44,54 +44,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
   </script>
-<div class="banner-bg banner-sec">	
+<div class="banner-bg banner-sec">
 	  <div class="container">
-			 <div class="header">
-			       <div class="logo">
-						 <a href="index.html"><img src="images/logo.png" alt=""/></a>
-				   </div>							 
-				  <div class="top-nav">										 
-						<label class="mobile_menu" for="mobile_menu">
-						<span>Menu</span>
-						</label>
-						<input id="mobile_menu" type="checkbox">
-					   <ul class="nav">
-						  <li class="dropdown1"><a href="bicycles.html">BICYCLES</a>
-							  <ul class="dropdown2">
-									<li><a href="bicycles.html">FIXED / SINGLE SPEED</a></li>
-									<li><a href="bicycles.html">CITY BIKES</a></li>
-									<li><a href="bicycles.html">PREMIMUN SERIES</a></li>												
-							  </ul>
-						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
-							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
-							  </ul>
-						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
-							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
-							  </ul>
-						 </li>               
-						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
-							 <ul class="dropdown2">
-									<li><a href="404.html">CLASSIC BELL</a></li>
-									<li><a href="404.html">BOTTLE CAGE</a></li>
-									<li><a href="404.html">TRUCK GRIP</a></li>
-							  </ul>
-						 </li>
-						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
-					  </ul>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-	  </div> 				 
+		  <?php
+		  include("partials/header.php");
+		  ?>
+	  </div>
 </div>
 <!--/banner-->
 <div class="product">
@@ -100,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="content-bar">
 				 <div class="single-page">
 					 <div class="product-head">
-						<a href="index.html">Home</a> <span>::</span>	
+						<a href="index.php">Home</a> <span>::</span>
 						</div>
 					 <!--Include the Etalage files-->
 						<link rel="stylesheet" href="css/etalage.css">
@@ -156,8 +114,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="length" href="#">M</a>
 							<a class="length" href="#">S</a>
 							<div class="btn_form">
-								<a href="cart.html">buy now</a>
-								<a href="cart.html">ADD TO CART</a>
+								<a href="cart.php">buy now</a>
+								<a href="cart.php">ADD TO CART</a>
 							</div>
 							<div class="bike-type">
 							<p>TYPE  ::<a href="#">MOUNTAIN BIKE</a></p>
@@ -179,14 +137,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s1.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Road Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Road Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$300.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 						<div class="clearfix"></div>
 			 </div>
@@ -196,14 +154,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s2.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Mountain Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Mountain Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$1500.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 				  <div class="clearfix"></div>
 			 </div>
@@ -213,14 +171,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s3.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Single Speed Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Single Speed Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$800.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 				 <div class="clearfix"></div>
 			  </div>
@@ -228,22 +186,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!---->
-<div class="footer">
-	 <div class="container wrap">
-		<div class="logo2">
-			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
-		</div>
-		<div class="ftr-menu">
-			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
-				 <li><a href="404.html">EXTRAS</a></li>
-			 </ul>
-		</div>
-		<div class="clearfix"></div>
-	 </div>
-</div>
+<?php
+include("partials/footer.php");
+?>
 <!---->
 
 </body>

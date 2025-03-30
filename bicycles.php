@@ -16,7 +16,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Bike-shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Bike-shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
@@ -43,117 +43,75 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
   </script>
-<div class="banner-bg banner-sec">	
+<div class="banner-bg banner-sec">
 	  <div class="container">
-			 <div class="header">
-			       <div class="logo">
-						 <a href="index.html"><img src="images/logo.png" alt=""/></a>
-				   </div>							 
-				  <div class="top-nav">										 
-						<label class="mobile_menu" for="mobile_menu">
-						<span>Menu</span>
-						</label>
-						<input id="mobile_menu" type="checkbox">
-					   <ul class="nav">
-						  <li class="dropdown1"><a href="bicycles.html">BICYCLES</a>
-							  <ul class="dropdown2">
-									<li><a href="bicycles.html">FIXED / SINGLE SPEED</a></li>
-									<li><a href="bicycles.html">CITY BIKES</a></li>
-									<li><a href="bicycles.html">PREMIMUN SERIES</a></li>												
-							  </ul>
-						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
-							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
-							  </ul>
-						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
-							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
-							  </ul>
-						 </li>               
-						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
-							 <ul class="dropdown2">
-									<li><a href="404.html">CLASSIC BELL</a></li>
-									<li><a href="404.html">BOTTLE CAGE</a></li>
-									<li><a href="404.html">TRUCK GRIP</a></li>
-							  </ul>
-						 </li>
-						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
-					  </ul>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-	  </div> 				 
+		  <?php
+		  include("partials/header.php");
+		  ?>
+	  </div>
 </div>
 <!--/banner-->
 <div class="bikes">		 
 	 <div class="mountain-sec">
 		 <h2>MOUNTAIN BIKES</h2>
-		 <a href="single.html"><div class="bike">				 
+		 <a href="single.php"><div class="bike">
 			 <img src="images/bik3.jpg" alt=""/>
 		     <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike">				 
+			 <a href="single.php"><div class="bike">
 				 <img src="images/bik1.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none2">				 
+			 <a href="single.php"><div class="bike none2">
 				 <img src="images/bik4.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none1">				 
+			 <a href="single.php"><div class="bike none1">
 				 <img src="images/bik6.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
 			 <div class="clearfix"></div>
@@ -161,64 +119,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 
 	  <div class="singlespeed-sec">
 		   <h2>SINGLE SPEED-BIKES</h2>
-			 <a href="single.html"><div class="bike">				 
+			 <a href="single.php"><div class="bike">
 				 <img src="images/s1.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike">				 
+			 <a href="single.php"><div class="bike">
 				 <img src="images/s2.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none2">				 
+			 <a href="single.php"><div class="bike none2">
 				 <img src="images/s3.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none1">				 
+			 <a href="single.php"><div class="bike none1">
 				 <img src="images/s4.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
 			 <div class="clearfix"></div>
@@ -226,64 +184,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 
 		 <div class="road-sec">
 		   <h2>ROAD-BIKES</h2>
-			 <a href="single.html"><div class="bike">				 
+			 <a href="single.php"><div class="bike">
 				 <img src="images/r1.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike">				 
+			 <a href="single.php"><div class="bike">
 				 <img src="images/r3.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none2">				 
+			 <a href="single.php"><div class="bike none2">
 				 <img src="images/r2.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
-			 <a href="single.html"><div class="bike none1">				 
+			 <a href="single.php"><div class="bike none1">
 				 <img src="images/r4.jpg" alt=""/>
 				 <div class="bike-cost">
 					 <div class="bike-mdl">
 						 <h4>NAME<span>Model:M4585</span></h4>
 					 </div>
 					 <div class="bike-cart">						 
-						 <a class="buy" href="single.html">BUY NOW</a>
+						 <a class="buy" href="single.php">BUY NOW</a>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
 				 <div class="fast-viw">
-						<a href="single.html">Quick View</a>
+						<a href="single.php">Quick View</a>
 				 </div>
 			 </div></a>
 			 <div class="clearfix"></div>
@@ -292,22 +250,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!---->
-<div class="footer">
-	 <div class="container wrap">
-		<div class="logo2">
-			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
-		</div>
-		<div class="ftr-menu">
-			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
-				 <li><a href="404.html">EXTRAS</a></li>
-			 </ul>
-		</div>
-		<div class="clearfix"></div>
-	 </div>
-</div>
+<?php
+include("partials/footer.php");
+?>
 <!---->
 
 </body>
