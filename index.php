@@ -269,11 +269,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<h3>CONTACT US</h3>
 		<p>Please contact us for all inquiries and purchase options.</p>
-		<form method="post" action="404.php">
-			 <input type="text" placeholder="NAME" required="">
-			 <input type="text" placeholder="SURNAME" required="">
-			 <input class="user" type="text" placeholder="USER@DOMAIN.COM" required=""><br>
-			 <textarea placeholder="MESSAGE"></textarea>
+		<form method="post" action="thankyou.php">
+			 <input type="text" placeholder="NAME" id="name" name="name" required="">
+			 <input type="text" placeholder="SURNAME" id="surname" name="surname" required="">
+			 <input class="user" type="text" placeholder="USER@DOMAIN.COM" id="email" name="email" required=""><br>
+			 <textarea placeholder="MESSAGE" id="question" name="question"></textarea>
 			 <input type="submit" value="SEND">
 		</form>
 	</div>
