@@ -5,6 +5,24 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
+<?php
+require_once("inc/autoload.php");
+$db = new Database();
+$contact = new Contact($db);
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    //print_r($_POST);
+    if ($contact->create($name, $surname, $email, $message)) {
+        header("Location: index.php");
+        exit;
+    } else {
+        echo "Error creating contact.";
+    }
+}
+?>
 <html>
 <head>
 <title>Bike Shop a Ecommerce Category Flat Bootstarp Responsive Website Template| Home :: w3layouts</title>
@@ -269,11 +287,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<h3>CONTACT US</h3>
 		<p>Please contact us for all inquiries and purchase options.</p>
-		<form method="post" action="thankyou.php">
+		<form method="post" action="">
 			 <input type="text" placeholder="NAME" id="name" name="name" required="">
 			 <input type="text" placeholder="SURNAME" id="surname" name="surname" required="">
 			 <input class="user" type="text" placeholder="USER@DOMAIN.COM" id="email" name="email" required=""><br>
-			 <textarea placeholder="MESSAGE" id="question" name="question"></textarea>
+			 <textarea placeholder="MESSAGE" id="question" name="message"></textarea>
 			 <input type="submit" value="SEND">
 		</form>
 	</div>
