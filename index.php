@@ -4,71 +4,32 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Bike Shop a Ecommerce Category Flat Bootstarp Responsive Website Template| Home :: w3layouts</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Bike-shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
-<!--webfont-->
-<!-- dropdown -->
-<script src="js/jquery.easydropdown.js"></script>
-<link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
-<script src="js/scripts.js" type="text/javascript"></script>
-<!--js-->
-<!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-		</script>
-<!---- start-smoth-scrolling---->
-
-
-</head>
-<body>
-<!--banner-->
-<script src="js/responsiveslides.min.js"></script>
-<script>  
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-<div class="banner-bg banner-bg1">
-	  <div class="container">
-		  <?php
-		  include("partials/header.php");
-		  ?>
-	  </div>
+<?php
+require_once("_inc/autoload.php");
+$db = new Database();
+$contact = new Contact($db);
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    //print_r($_POST);
+    if ($contact->create($name, $surname, $email, $message)) {
+        header("Location: 404.php");
+        exit;
+    } else {
+        echo "Error creating contact.";
+    }
+}
+include("partials/header_index.php");
+?>
 	 <div class="caption">
 		 <div class="slider">
 					   <div class="callbacks_container">
 						   <ul class="rslides" id="slider">
 							    <li><h1>HANDMADE BICYCLE</h1></li>
-								<li><h1>SPEED BICYCLE</h1></li>
-								<li><h1>MOUINTAIN BICYCLE</h1></li>
+								<li><h1>SPEED BICYCLE</h1></li>	
+								<li><h1>MOUINTAIN BICYCLE</h1></li>	
 						  </ul>
 						  <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts</span></p>
 						  <a class="morebtn" href="bicycles.php">SHOP BIKES</a>
@@ -77,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 	 <div class="dwn">
 		<a class="scroll" href="#cate"><img src="images/scroll.png" alt=""/></a>
-	 </div>
+	 </div>				 
 </div>
 <!--/banner-->
 <div id="cate" class="categories">
@@ -268,22 +229,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="contact">
 	<div class="container">
 		<h3>CONTACT US</h3>
-		<p>Please contact us for all inquiries and purchase options.</p>
-		<form method="post" action="thankyou.php">
-			 <input type="text" placeholder="NAME" id="name" name="name" required="">
-			 <input type="text" placeholder="SURNAME" id="surname" name="surname" required="">
-			 <input class="user" type="text" placeholder="USER@DOMAIN.COM" id="email" name="email" required=""><br>
-			 <textarea placeholder="MESSAGE" id="question" name="question"></textarea>
-			 <input type="submit" value="SEND">
-		</form>
+        <p>Please contact us for all inquiries and purchase options.</p>
+        <form method="post" action="">
+            <input type="text" placeholder="NAME" id="name" name="name" required="">
+            <input type="text" placeholder="SURNAME" id="surname" name="surname" required="">
+            <input class="user" type="text" placeholder="USER@DOMAIN.COM" id="email" name="email" required=""><br>
+            <textarea placeholder="MESSAGE" id="question" name="message"></textarea>
+            <input type="submit" value="SEND">
+        </form>
 	</div>
 </div>
 <!---->
 <?php
-include("partials/footer.php");
+include('partials/footer.php');
 ?>
 <!---->
-
-</body>
-</html>
 
