@@ -2,7 +2,6 @@
 require_once '_inc/autoload.php';
 $db = new Database();
 $auth = new Authenticate($db);
-include("partials/header_others.php");
 //echo '<pre>';
 //print_r($_SESSION['add']);
 //echo '</pre>';
@@ -14,6 +13,11 @@ $userId = $auth->isLoggedIn() ? $_SESSION['user_id'] : null;
 $sessionId = session_id();
 $cartItems = $cart->getCartItems($userId);
 $total = $cart->getTotal($userId);
+if(!$auth->isLoggedIn()) {
+    header("location: login.php");
+    exit;
+}
+include("partials/header_others.php");
 ?>
 
 <div class="cart">

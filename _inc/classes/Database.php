@@ -60,4 +60,11 @@ class Database{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getBikesByType($type) {
+        $sql = "SELECT * FROM products WHERE type like '%$type%'";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

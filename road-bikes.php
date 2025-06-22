@@ -1,10 +1,10 @@
 <?php include("partials/header_others.php");
 $db = new Database();
-$bikes = $db->getAllBikes();
+$bikes = $db->getBikesByType("ROAD");
 ?>
 
 <div class="bikes">
-    <div class="mountain-sec">
+    <div class="road-sec">
         <h2>ROAD BIKES</h2>
 
         <?php
@@ -26,12 +26,12 @@ $bikes = $db->getAllBikes();
                                 </h4>
                             </div>
                             <div class="bike-cart">
-                                <a class="buy" href="single.php?product_id=<?php echo $bike['id']; ?>">BUY NOW</a>
+                                <a class="buy" href="single.php?product_id=<?php echo htmlspecialchars($bike['id']); ?>">BUY NOW</a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="fast-viw">
-                            <a href="single.php?product_id=<?php echo $bike['id']; ?>">Quick View</a>
+                            <a href="single.php?product_id=<?php echo htmlspecialchars($bike['id']); ?>">Quick View</a>
                         </div>
                     </div>
                 </a>

@@ -1,10 +1,10 @@
 <?php include("partials/header_others.php");
 $db = new Database();
-$bikes = $db->getAllBikes();
+$bikes = $db->getBikesByType("MOUNTAIN");
 ?>
 
 <div class="bikes">
-    <div class="mountain-sec">
+    <div class="road-sec">
         <h2>MOUNTAIN BIKES</h2>
 
         <?php
