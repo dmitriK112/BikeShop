@@ -11,7 +11,7 @@ class Authenticate {
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->execute();
         $user = $stmt->fetch();
-        var_dump($user);
+        //var_dump($user);
 
         if($user) {
             if(password_verify($password, $user['password'])) {
@@ -20,14 +20,7 @@ class Authenticate {
                 $_SESSION['role'] = $user['role'];
                 $_SESSION['name'] = $user['name'];
                 return true;
-            } else{
-                echo "Password verification failed.<br>";
-                echo $password."<br>";
-                echo $user['password']."<br>";
-                var_dump($_SESSION);
             }
-        } else {
-            echo "User not found.<br>";
         }
         return false;
     }
