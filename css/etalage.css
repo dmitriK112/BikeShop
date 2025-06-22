@@ -18,14 +18,15 @@
 /* Large thumbnail: */
 #etalage .etalage_thumb{
 	background: white url(../images/loading.gif) center no-repeat;
+
 	
 }
 
 /* Large thumbnail - image (in case you want to add a border around the image within the frame) */
-#etalage .etalage_thumb_image{ }
+#etalage .etalage_thumb_image{}
 
 /* Small thumbnails: */
-#etalage .etalage_small_thumbs li{
+#etalage .etalage_ s li{
 	
 	border: 1px solid #BBC4C9;
 	margin: 10px;

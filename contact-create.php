@@ -9,24 +9,27 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $message = $_POST['message'];
     //print_r($_POST);
     if ($contact->create($name, $surname, $email, $message)) {
-        header("Location: admin.php");
+        header("Location: contacts.php");
         exit;
     } else {
         echo "Error creating contact.";
     }
 }
 ?>
-<div class="page-wrapper">
-<section class="container">
-    <h1>Adding contact</h1>
-    <form id="contact" action="" method="POST">
-        <input type="text" placeholder="NAME" id ="name" name="name" required><br>
-        <input type="text" placeholder="SURNAME" id ="surname" name="surname" required><br>
-        <input type="email" placeholder="EMAIL" id="email" name="email" required><br>
-        <textarea placeholder="MESSAGE" id="message" name="message" ></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-</section>
+<div class="contact">
+    <div class="container">
+        <h3>CREATING CONTACT</h3>
+        <div class="cart-top">
+            <a href="contacts.php"><< back</a>
+        </div>
+        <form id="contact" action="" method="POST">
+            <input type="text" placeholder="NAME" id ="name" name="name" required><br>
+            <input type="text" placeholder="SURNAME" id ="surname" name="surname" required><br>
+            <input type="text" placeholder="EMAIL" id="email" name="email" required><br>
+            <textarea placeholder="MESSAGE" id="message" name="message" ></textarea><br>
+            <input type="submit" value="CREATE">
+        </form>
+    </div>
 </div>
 <?php
 include('partials/footer.php');

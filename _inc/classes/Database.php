@@ -7,7 +7,7 @@ class Database{
     private $user = "root";
     private $pass = "";
     private $charset = "utf8";
-    private $pdo;
+    public $pdo;
 
 
     public function __construct() {
@@ -30,4 +30,34 @@ class Database{
     public function getConnection(){
         return $this->pdo;
     }
+
+    public function getAllBikes() {
+        $sql = "SELECT * FROM products WHERE type like '%BIKE%'";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getPopularProducts($limit=3) {
+        $sql = 'SELECT * FROM products order by popularity desc limit :limit';
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getAccessories() {
+        $sql = "SELECT * FROM products WHERE type like '%accessories%'";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getParts() {
+        $sql = "SELECT * FROM products WHERE type like '%Parts%'";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

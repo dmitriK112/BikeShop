@@ -1,7 +1,7 @@
 <?php
 require_once("_inc/autoload.php");
-session_start();
-print_r($_SESSION);
+$db = new Database();
+$auth = new Authenticate($db);
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,9 +69,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="nav">
                     <li class="dropdown1"><a href="bicycles.php">BICYCLES</a>
                         <ul class="dropdown2">
-                            <li><a href="bicycles.php">FIXED / SINGLE SPEED</a></li>
-                            <li><a href="bicycles.php">CITY BIKES</a></li>
-                            <li><a href="bicycles.php">PREMIMUN SERIES</a></li>
+                            <li><a href="mountain-bikes.php">MOUNTAIN BIKES</a></li>
+                            <li><a href="single-speed-bikes.php">SINGLE SPEED BIKES</a></li>
+                            <li><a href="road-bikes.php">ROAD SERIES</a></li>
                         </ul>
                     </li>
                     <li class="dropdown1"><a href="parts.php">PARTS</a>
@@ -90,12 +90,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a href="accessories.php">JERSEYS</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown1"><a href="404.php">EXTRAS</a>
-                        <ul class="dropdown2">
-                            <li><a href="404.php">CLASSIC BELL</a></li>
-                            <li><a href="404.php">BOTTLE CAGE</a></li>
-                            <li><a href="404.php">TRUCK GRIP</a></li>
-                        </ul>
+                    <li class="dropdown1">
+                        <?php
+                        if ($auth->isLoggedIn()) {
+                            echo '<a href="logout.php">LOGOUT</a>';
+                            if($auth->getUserRole() == 0){
+                                echo '</li>';
+                                echo '<li class="dropdown1"><a href="admin.php">ADMIN</a>';
+                            }
+                            else{
+                                echo '</li>';
+                                echo '<li class="dropdown1"><a href="user-edit.php?id=' . htmlspecialchars($_SESSION['user_id']) . '">PROFILE</a></li>';
+
+                            }
+                        } else {
+                            echo '<a href="login.php">LOGIN</a>';
+                            echo '<ul class="dropdown2">';
+                            echo '<li><a href="login.php">LOGIN</a></li>';
+                            echo '<li><a href="registry.php">REGISTER</a></li>';
+                            echo '</ul>';
+                        }
+                        ?>
                     </li>
                     <a class="shop" href="cart.php"><img src="images/cart.png" alt=""/></a>
                 </ul>

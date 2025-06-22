@@ -15,7 +15,7 @@ if(isset($_GET['id'])){
         $message = $_POST['message'];
         //print_r($_POST);
         if ($contact->edit($id, $name, $surname, $email, $message)) {
-            header("Location: admin.php");
+            header("Location: contacts.php");
             exit;
         } else {
             echo "Error editing contact.";
@@ -24,17 +24,21 @@ if(isset($_GET['id'])){
 }
 include('partials/header_others.php');
 ?>
-<div class="page-wrapper">
-    <section class="container">
-        <h1>Update contact</h1>
+<div class="contact">
+    <div class="container">
+        <h3>UPDATE CONTACT</h3>
+        <div class="cart-top">
+            <a href="contacts.php"><< back</a>
+        </div>
+        <p>EDIT INFO</p>
         <form id="contact" action="" method="POST">
-            <input type="text" id ="name" name="name" value="<?php echo($contactData['name']);?>" required><br>
-            <input type="text" id ="surname" name="surname" value="<?php echo($contactData['surname']);?>" required><br>
-            <input type="email" id="email" name="email" value="<?php echo($contactData['email']);?>"required><br>
-            <textarea id="message" name="message"><?php echo($contactData['message']);?></textarea><br>
-            <input type="submit" value="Submit">
+            <input type="text" placeholder="NAME" id="name" name="name" value="<?php echo htmlspecialchars($contactData['name']); ?>" required>
+            <input type="text" placeholder="SURNAME" id="surname" name="surname" value="<?php echo htmlspecialchars($contactData['surname']); ?>" required>
+            <input class="user" type="text" placeholder="USER@DOMAIN.COM" id="email" name="email" value="<?php echo htmlspecialchars($contactData['email']); ?>" required><br>
+            <textarea placeholder="MESSAGE" id="message" name="message"><?php echo htmlspecialchars($contactData['message']); ?></textarea>
+            <input type="submit" value="EDIT">
         </form>
-    </section>
+    </div>
 </div>
 <?php
 include('partials/footer.php');
